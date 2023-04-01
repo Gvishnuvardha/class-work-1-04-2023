@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    char c;
+
+    printf("Enter a character: ");
+    scanf("%c", &c);
+
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
+        printf("This is an alphabet.\n");
+    } else if (c >= '0' && c <= '9') {
+        printf("This is a digit.\n");
+    } else {
+        printf("This is a special character.\n");
+    }
+
+    return 0;
+}
+In this program, we first prompt the user to enter a character using the printf and scanf functions. We then use a series of if statements to determine whether the character is an alphabet, digit or special character.
+
+If the character is within the range of lowercase or uppercase alphabets, we print that it is an alphabet. If the character is a digit between 0 and 9, we print that it is a digit. If the character does not fall within either of these ranges, we print that it is a special character.
+
+
+
+
+
