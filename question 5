@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float sum = 0.0;
+
+    printf("Input the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Harmonic series: ");
+    for (i = 1; i <= n; i++) {
+        printf("1/%d ", i);
+        sum += 1.0/i;
+    }
+
+    printf("\nSum of series upto %d terms: %f", n, sum);
+    return 0;
+}
