@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int numRows, row, col, coef = 1;
+
+    printf("Enter the number of rows to generate Pascal's triangle: ");
+    scanf("%d", &numRows);
+
+    printf("Pascal's triangle:\n");
+    for(row = 0; row < numRows; row++) {
+        for(col = 0; col <= row; col++) {
+            if (col == 0 || row == 0)
+                coef = 1;
+            else
+                coef = coef * (row - col + 1) / col;
+            printf("%d ", coef);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
